@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS nuevo_db;
+CREATE DATABASE nuevo_db;
