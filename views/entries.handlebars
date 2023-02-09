@@ -1,0 +1,58 @@
+{{#each posts as |post|}}
+  <section class="container mt-5">
+    <div class="card mb-3">
+      <h1 class="card-header">
+        {{post.user.user_name}}
+        posted:
+      </h1>
+      <div class="card-body">
+        <h5 class="card-title">{{post_title}}</h5>
+        <h6 class="card-text mt-3">{{post_text}}</h6>
+        <div class="d-flex justify-content-end">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalCenter">
+            Comment
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img id="logo" src="">
+            <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+          </div>
+          <div class="modal-body">
+            <form>
+  <div class="form-group">
+    <label for="commentInstruction">Write your comment here:</label>
+    <input type="string" class="form-control" id="commentInput" aria-describedby="comment" placeholder="Comment">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+          </div>
+          <div class="modal-footer">
+            <p class="escape fs-10">Click outside the window to cancel</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{/each}}
+
+<script src="/Workout-Tracker/public/js/login.js"></script>
+<script src="/Workout-Tracker/public/js/profile.js"></script>
