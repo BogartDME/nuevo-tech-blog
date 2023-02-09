@@ -1,17 +1,39 @@
-<h2>Login</h2>
+<section>
+        <div class="container my-5 ">
+            <h1 class="row g-3 d-flex justify-content-center">Login</h1>
+            <form id="login-form" class="row g-3 d-flex justify-content-center">
+                <div class="col-auto">
+                    <label for="Email" class="visually-hidden">email</label>
+                    <input class="form-control font-theme" id="email-login" type="text" placeholder="Email" aria-label="default input example">
+                </div>
+                <div class="col-auto">
+                    <label for="inputPassword2" class="visually-hidden">Password</label>
+                    <input type="password" id="password-login" class="form-control font-theme" id="inputPassword2" placeholder="Password">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-success mb-3">Confirm identity</button>
+                </div>
+            </form>
+        </div>
 
-<form class="form login-form">
-  <div class="form-group">
-    <label for="email-login">email:</label>
-    <input class="form-input" type="text" id="email-login" />
-  </div>
-  <div class="form-group">
-    <label for="password-login">password:</label>
-    <input class="form-input" type="password" id="password-login" />
-  </div>
-  <div class="form-group">
-    <button class="btn btn-primary" type="submit">login</button>
-  </div>
-</form>
+<div class="container mt-5">
+        <h1 class="row d-flex justify-content-center">Sign Up</h1>
+    </div>
+    <form id="sign-up-form">
+    <div class="container d-flex justify-content-center">
+        <div class="w-25 font-theme">
+            <div class="input-group"></div>
+            <input type="text" class="form-control mb-1" placeholder="First Name Last Name" id="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control mb-1" placeholder="Password" id="Password" aria-describedby="basic-addon1">
+            <input type="text" class="form-control mb-1" placeholder="E-mail" id="E-mail" aria-describedby="basic-addon1">
+            <input type="text" class="form-control mb-1" placeholder="Starting Weight" id="Starting-Weight" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="Goal Weight" id="Goal-Weight" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    <div class="container my-5 d-flex justify-content-center font-theme">
+        <button type="submit" class="btn btn-success mb-3 w-25 fs-4">Submit</button>
+    </div>
+    </form>
+    </section>
 
-<script src="/js/login.js"></script>
+<script src="/js/login.js"> </script>
