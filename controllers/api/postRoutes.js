@@ -12,15 +12,6 @@ const withAuth = require('../../utils/auth');
 router.get('/', withAuth, (req, res) => {
   try{  
   const postInfo = Posts.findAll({
-      // attributes: [
-      //   'id',
-      //   'post_title',
-      //   'post_text',
-      //   'likes',
-      //   'user_id',
-      //   'user_name',
-      //   [sequelize.literal('(SELECT COUNT(*) FROM like WHERE post.id = like.post_id)'), 'likes']
-      // ],
       include: [
         {
           model: Comment,
